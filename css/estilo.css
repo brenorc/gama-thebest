@@ -1,0 +1,137 @@
+#principal{
+	width: auto;
+	height: 600px;
+	background-image: url(../img/principal.jpg);
+
+}
+
+header{
+	width: 1070px;
+	height: 96px;
+	background: rgba(0,0,0, 0.8);
+	margin-left:190px;
+	margin-top:25px;
+}
+
+#logo{
+	width: 120px;
+	height: 95px;
+	background-image: url(../img/logo.png);
+	margin-left: 40px;
+	margin-top:-17px;
+}
+
+section{
+	margin-top:10px;
+	width: auto;
+	height: 1400px;
+}
+
+.imagem{
+	width: 600px;
+	height: 300px;
+}
+
+.imgum{
+	margin-left: 200px;
+	margin-top: 70px;
+	background-image: url(../img/foco.jpg);
+}
+
+.imgdois{
+	margin-left: 655px;
+	background-image: url(../img/reuniao.jpg);
+}
+
+.texto{
+	width: 430px;
+	height: 505px;
+	background: rgba(0,0,0, 0.8);
+	border-radius: 2px;
+}
+
+
+.txtgum{
+	margin-left: 822px;
+	margin-top: -300px;
+}
+
+.txtdois{
+	margin-left: 200px;
+	margin-top: -300px;
+
+}
+
+.botao{
+	width: 250px;
+	height: 60px;
+	border-radius: 5px;
+	border: none;
+	background: rgba(0,0,0, 0.8);
+	
+}
+
+.bntum{
+	margin-left: 350px;
+	margin-bottom: 170px;
+	margin-top: -90px;
+}
+
+.bntdois{
+	margin-left: 750px;
+}
+
+p1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	color: white;
+	margin-left: 10px;
+}
+
+p2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24px;
+	padding: 2px;
+	margin-left: 10px;
+	color: white;
+}
+
+p3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22px;
+	color:white;
+}
+
+.botao a{
+	text-decoration: none;
+}
+#caixatexto{
+	margin-left: 15px;
+	width: 400px;
+}
+
+footer{
+	width: auto;
+	height: 80px;
+	background-color: black;
+}
+
+
+nav{
+	margin-left: 230px;
+	margin-top: -87px;
+}
+
+nav ul li{
+	list-style: none;
+	float:left;
+	margin-top:14px;
+}
+
+nav ul li a {
+	color: #fff;
+	padding: 30px;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 23px;
+}
