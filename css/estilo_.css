@@ -1,0 +1,65 @@
+body{
+	background-image: url(../img/principal.jpg) ;
+	background-repeat: no-repeat;
+}
+
+.img-logo{
+	height: 100px;
+	width: 120px;
+	background-image: url(../img/logo.png) ;
+	background-position:  no-repeat;
+	display: block;
+	color: transparent;
+	margin-top: -36px;
+}
+
+nav.navbar-transparente{
+	background: rgba(0,0,0, 0.8);
+	padding: 19px 0px;
+	border:none;
+}
+
+p2{
+color: white;
+}
+
+#conteudo{
+	margin-top: 650px;
+	background-color:white;
+}
+
+p3{
+	font-size: 17px;
+	letter-spacing: 700;
+	color: white;
+}
+
+h2{
+	color: white;
+}
+
+.botao{
+	margin-left: 210px;
+	width: 150px;
+	background: rgba(0,0,0, 0.8);
+}
+
+.quadroum{
+	background-color:red;
+	width:400px;
+	height:400px;
+}
+
+.quadrodois{
+	background-color:blue;
+	width:400px;
+	height:400px;
+}
+
+.principal{
+	position:center;
+}
+
+
+
+	
