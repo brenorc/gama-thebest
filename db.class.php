@@ -36,7 +36,7 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 $sql = "INSERT INTO contato (nome, sobrenome, email, ipaddress, data, hora) VALUES ('$nome', '$sobrenome', '$email', '$ip', '$data', '$hora')";
 
 if(mysqli_query($link, $sql)){
-    echo "Records inserted successfully.";
+    require_once("index.php");
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

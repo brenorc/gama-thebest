@@ -1,6 +1,12 @@
 body{
 	background-image: url(../img/principal.jpg) ;
 	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
 }
 
 .img-logo{
