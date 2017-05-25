@@ -19,49 +19,29 @@ nav.navbar-transparente{
 	border:none;
 }
 
-p3{
-color: white;
+p4{
+	color: white;
+	font-size: 17px;
+	letter-spacing: 700;
 }
 
-#conteudo{
-	margin-top: 650px;
-	background-color:white;
-}
 
 p3{
 	font-size: 17px;
 	letter-spacing: 700;
-	color: white;
+	color: black;
 }
 
 h2{
-	color: white;
+	color: black;
 	
 }
 
-.botao{
-	margin-left: 210px;
-	width: 150px;
-	background: rgba(0,0,0, 0.8);
+
+.conteudo{
+	margin-top: 630px;
 }
 
-.um{
-	width: 400px;
-	height:400px;
-	background: rgba(0,0,0, 0.8);
-	border-radius: 2px;
-}
-
-.imagem{
-	margin-left: 100px;
-	margin-bottom: -40px;
-}
-
-
-.dois{
-	margin-bottom: -40px;
-	width: 400px;
-	height:400px;
-	background: rgba(0,0,0, 0.8);
-	border-radius: 2px;
+.teste{
+	background-color:blue;
 }

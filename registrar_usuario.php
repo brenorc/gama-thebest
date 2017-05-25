@@ -1,43 +1,51 @@
-<?php 
+﻿<?php
 
-require_once ('db.class.php');
-
-$nome = $_POST['nome'];
-$sobrenome = $_POST['sobrenome'];
-$email = $_POST['email'];
-$timestamp = mktime(date("H")-3, date("i"), date("s"));
-$hora = gmdate("H:i:s", $timestamp);
-$data = date('Y-m-d');
-
-function getUserIP()
-{
-    $client  = @$_SERVER['HTTP_CLIENT_IP'];
-    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
-    $remote  = $_SERVER['REMOTE_ADDR'];
-    if(filter_var($client, FILTER_VALIDATE_IP))
-    {
-        $ip = $client;
-    }
-    elseif(filter_var($forward, FILTER_VALIDATE_IP))
-    {
-        $ip = $forward;
-    }
-    else
-    {
-        $ip = $remote;
-    }
-    return $ip;
+$link = mysqli_connect("localhost", "root", "gogama", "db_projeto");
+ 
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$ipaddress = getUserIP();
+ 
+// Attempt insert query execution
 
-$objDb = new db();
-$link = $objDb->conecta_mysql();
-$sql = " insert into contato(nome,sobrenome,email, data, hora) values('$nome','$sobrenome','$email', '$data', '$hora') ";
+// Pegando dados do form
 
+$nome = mysqli_real_escape_string($link, $_REQUEST['nome']);
+$sobrenome = mysqli_real_escape_string($link, $_REQUEST['sobrenome']);
+$email = mysqli_real_escape_string($link, $_REQUEST['email']);
+$empresa = mysqli_real_escape_string($link, $_REQUEST['empresa']);
+
+
+// data
+
+date_default_timezone_set("America/Sao_Paulo");
+$data = date("Y-m-d");
+$hora = date("h:i:s");
+
+//IP 
+
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
+
+
+ 
+// Insert
+
+$sql = "INSERT INTO contato (nome, sobrenome, email, ipaddress, data, hora,empresa) VALUES ('$nome', '$sobrenome', '$email', '$ip', '$data', '$hora','$empresa' )";
 
 if(mysqli_query($link, $sql)){
-		require_once("index.php");
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}
- ?>
+    	header('Location: index.php?'.$retorno_get);
+		die();
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+ 
+// Fecha conexão
+
+mysqli_close($link);
+?>

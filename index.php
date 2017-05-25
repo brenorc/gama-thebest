@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -102,13 +102,15 @@
             Acompanhe as novidades desse setor, sinta-se seguro para discutir sobre as tendências mais modernas do mercado, como Fintechs, Bitcoin e muito mais.
           </p3>
         </div>
-		
         </div>
 	
 		 </div>	
     </section>
 	
-     
+    				 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+				<a href="https://www.facebook.com/mundimediaf/" class="fa fa-facebook"></a>
+				<a href="https://www.linkedin.com/company/mundimedia?trk=company_logo" class="fa fa-linkedin"></a>
 
     <div class="container"> 	 	
 
@@ -131,7 +133,9 @@
               </button>
               <h4 class="modal-title">Inscreva-se</h4>
             </div>
+			
 
+				
             <!-- corpo -->
 
 
@@ -151,6 +155,8 @@
           </button>
         </form>
     </div>
+
+				
 
 
  
